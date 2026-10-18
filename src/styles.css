@@ -216,18 +216,20 @@ section.block {
   padding: 130px 0 60px;
   position: relative;
   z-index: 1;
+  background: transparent;
 }
 
-/* ambient glows behind the hero: purple top-left, teal bottom-right */
-.hero::before {
+/* ambient page glows: fixed to the viewport (not boxed to any section),
+   so there is never a visible panel edge anywhere */
+body::before {
   content: "";
-  position: absolute;
+  position: fixed;
   inset: 0;
   pointer-events: none;
   z-index: -1;
   background:
-    radial-gradient(520px 380px at 12% 18%, #7c3aed1f, transparent 70%),
-    radial-gradient(620px 440px at 88% 82%, #22d3ee14, transparent 70%);
+    radial-gradient(700px 500px at 8% 4%, #7c3aed14, transparent 70%),
+    radial-gradient(800px 560px at 95% 90%, #22d3ee0f, transparent 70%);
 }
 
 .hero-badge {
