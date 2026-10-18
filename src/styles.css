@@ -879,8 +879,8 @@ body::before {
   z-index: 0;
   background: radial-gradient(
     circle,
-    #6366f11f 0%,
-    #22d3ee12 42%,
+    #6366f10c 0%,
+    #22d3ee09 42%,
     transparent 68%
   );
 }
