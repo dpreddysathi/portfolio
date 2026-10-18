@@ -20,7 +20,9 @@ export function Hero() {
         Open to opportunities
       </div>
       <h1 className="hero-name reveal">
-        Sathi Durga Prasad <span className="hl">Reddy</span>
+        Sathi Durga Prasad
+        <br />
+        <span className="hl">Reddy</span>
       </h1>
       <p className="hero-role reveal">
         <span className="prompt">$</span> Java Backend Developer — Spring Boot ·
