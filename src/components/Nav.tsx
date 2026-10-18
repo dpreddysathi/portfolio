@@ -28,6 +28,9 @@ export default function Nav() {
           >
             résumé ↗
           </a>
+          <a className="nav-hire" href={LINKS.hireMe}>
+            Hire Me
+          </a>
         </div>
         <button
           className="hamburger"
@@ -52,7 +55,13 @@ export default function Nav() {
         >
           résumé ↗
         </a>
-
+        <a
+          href={LINKS.hireMe}
+          className="mobile-hire"
+          onClick={() => setOpen(false)}
+        >
+          Hire Me →
+        </a>
       </div>
     </nav>
   );

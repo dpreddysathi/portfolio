@@ -9,6 +9,8 @@ export const LINKS = {
   leetcode: "https://leetcode.com/dpreddy4444",
   oldPortfolio: "https://dpreddysathi.github.io/portfolio",
   resume: "./resume.pdf",
+  hireMe:
+    "mailto:dpreddy.sathi@gmail.com?subject=Opportunity%20for%20Sathi%20Durga%20Prasad%20Reddy",
 };
 
 export interface Stat {
@@ -161,6 +163,12 @@ export interface Achievement {
 }
 
 export const ACHIEVEMENTS: Achievement[] = [
+  {
+    emoji: "👏",
+    title: "Customer Champ Award",
+    text: "Recognized with the best customer applause in the team.",
+    org: "TCS · Oct 2026",
+  },
   {
     emoji: "🏆",
     title: "Best Employee Trophy",

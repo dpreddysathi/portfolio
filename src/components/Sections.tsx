@@ -35,8 +35,11 @@ export function Hero() {
         serving <strong>1M+ documents</strong>.
       </p>
       <div className="hero-ctas reveal">
-        <a className="btn btn-primary" href="#projects">
-          View my work →
+        <a className="btn btn-primary" href={LINKS.hireMe}>
+          Hire Me →
+        </a>
+        <a className="btn btn-ghost" href="#projects">
+          View Projects
         </a>
         <a
           className="btn btn-ghost"
@@ -45,6 +48,9 @@ export function Hero() {
           rel="noreferrer"
         >
           résumé ↗
+        </a>
+        <a className="btn btn-ghost" href="#contact">
+          Get in Touch
         </a>
       </div>
       <div className="stats-band reveal">
