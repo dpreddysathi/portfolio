@@ -155,35 +155,40 @@ export function Experience() {
     <section className="block wrap" id="experience">
       <SectionLabel text="where i've worked" />
       <h2 className="sec-title reveal">Work Experience</h2>
-      {EXPERIENCE.map((e) => (
-        <div className="exp-item reveal" key={e.company}>
-          <div className="exp-head">
-            <h3 className="exp-role">{e.role}</h3>
-            <span className="exp-period">{e.period}</span>
-          </div>
-          <p className="exp-company">{e.company}</p>
-          {e.projects.map((p) => (
-            <div key={p.name}>
-              <p className="exp-project">
-                {p.name}
-                <span className="exp-client">— {p.client}</span>
-              </p>
-              <ul className="bullets">
-                {p.bullets.map((b, i) => (
-                  <li key={i}>{b}</li>
-                ))}
-              </ul>
-              <div className="tag-row" style={{ margin: "14px 0 6px" }}>
-                {p.tags.map((t) => (
-                  <span className="tag" key={t}>
-                    {t}
-                  </span>
-                ))}
+      <div className="timeline">
+        {EXPERIENCE.map((e) => (
+          <div className="timeline-item reveal" key={e.company}>
+            <span className="timeline-dot" aria-hidden="true" />
+            <div className="timeline-card">
+              <div className="exp-head">
+                <h3 className="exp-role">{e.role}</h3>
+                <span className="exp-period">{e.period}</span>
               </div>
+              <p className="exp-company">{e.company}</p>
+              {e.projects.map((p) => (
+                <div key={p.name}>
+                  <p className="exp-project">
+                    {p.name}
+                    <span className="exp-client">— {p.client}</span>
+                  </p>
+                  <ul className="bullets">
+                    {p.bullets.map((b, i) => (
+                      <li key={i}>{b}</li>
+                    ))}
+                  </ul>
+                  <div className="tag-row" style={{ margin: "14px 0 6px" }}>
+                    {p.tags.map((t) => (
+                      <span className="tag" key={t}>
+                        {t}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
-      ))}
+          </div>
+        ))}
+      </div>
     </section>
   );
 }
