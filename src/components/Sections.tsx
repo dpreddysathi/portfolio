@@ -38,8 +38,13 @@ export function Hero() {
         <a className="btn btn-primary" href="#projects">
           View my work →
         </a>
-        <a className="btn btn-ghost" href={LINKS.resume} download>
-          Download résumé ↓
+        <a
+          className="btn btn-ghost"
+          href={LINKS.resume}
+          target="_blank"
+          rel="noreferrer"
+        >
+          résumé ↗
         </a>
       </div>
       <div className="stats-band reveal">

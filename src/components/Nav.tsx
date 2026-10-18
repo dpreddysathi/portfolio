@@ -20,8 +20,13 @@ export default function Nav() {
               {n.label}
             </a>
           ))}
-          <a className="nav-resume" href={LINKS.resume} download>
-            résumé ↓
+          <a
+            className="nav-resume"
+            href={LINKS.resume}
+            target="_blank"
+            rel="noreferrer"
+          >
+            résumé ↗
           </a>
         </div>
         <button
@@ -39,9 +44,15 @@ export default function Nav() {
             {n.label}
           </a>
         ))}
-        <a href={LINKS.resume} download onClick={() => setOpen(false)}>
-          résumé ↓
+        <a
+          href={LINKS.resume}
+          target="_blank"
+          rel="noreferrer"
+          onClick={() => setOpen(false)}
+        >
+          résumé ↗
         </a>
+
       </div>
     </nav>
   );
